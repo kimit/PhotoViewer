@@ -27,6 +27,7 @@
 		50A7CCD01818905D00AC29CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A7CCCF1818905D00AC29CD /* main.m */; };
 		50A7CCD61818905D00AC29CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A7CCD51818905D00AC29CD /* Images.xcassets */; };
 		50A7CCF01818921A00AC29CD /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A7CCEF1818921A00AC29CD /* GHUnitIOS.framework */; };
+		50D5D220181EEA2F0050B0C7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D5D218181EEA2F0050B0C7 /* libOCMock.a */; };
 		6854C61617FB65B400EF8317 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6854C61517FB65B400EF8317 /* Foundation.framework */; };
 		6854C61817FB65B400EF8317 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6854C61717FB65B400EF8317 /* CoreGraphics.framework */; };
 		6854C61A17FB65B400EF8317 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6854C61917FB65B400EF8317 /* UIKit.framework */; };
@@ -70,6 +71,13 @@
 		50A7CCD11818905D00AC29CD /* GHUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		50A7CCD51818905D00AC29CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50A7CCEF1818921A00AC29CD /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		50D5D218181EEA2F0050B0C7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		50D5D21A181EEA2F0050B0C7 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		50D5D21B181EEA2F0050B0C7 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		50D5D21C181EEA2F0050B0C7 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		50D5D21D181EEA2F0050B0C7 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		50D5D21E181EEA2F0050B0C7 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		50D5D21F181EEA2F0050B0C7 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		6854C61217FB65B400EF8317 /* PhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6854C61517FB65B400EF8317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6854C61717FB65B400EF8317 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +125,7 @@
 				50A7CCC71818905D00AC29CD /* CoreGraphics.framework in Frameworks */,
 				50A7CCF01818921A00AC29CD /* GHUnitIOS.framework in Frameworks */,
 				504204CB1819BD5F00FD3DCA /* XCTest.framework in Frameworks */,
+				50D5D220181EEA2F0050B0C7 /* libOCMock.a in Frameworks */,
 				50A7CCC81818905D00AC29CD /* UIKit.framework in Frameworks */,
 				50A7CCC61818905D00AC29CD /* Foundation.framework in Frameworks */,
 			);
@@ -176,6 +185,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50D5D217181EEA2F0050B0C7 /* OCMockLib */ = {
+			isa = PBXGroup;
+			children = (
+				50D5D218181EEA2F0050B0C7 /* libOCMock.a */,
+				50D5D219181EEA2F0050B0C7 /* OCMock */,
+			);
+			path = OCMockLib;
+			sourceTree = "<group>";
+		};
+		50D5D219181EEA2F0050B0C7 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				50D5D21A181EEA2F0050B0C7 /* NSNotificationCenter+OCMAdditions.h */,
+				50D5D21B181EEA2F0050B0C7 /* OCMArg.h */,
+				50D5D21C181EEA2F0050B0C7 /* OCMConstraint.h */,
+				50D5D21D181EEA2F0050B0C7 /* OCMock.h */,
+				50D5D21E181EEA2F0050B0C7 /* OCMockObject.h */,
+				50D5D21F181EEA2F0050B0C7 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		6854C60917FB65B400EF8317 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +215,7 @@
 				509A6A63181B404400F66A0C /* LogicTests */,
 				6854C61417FB65B400EF8317 /* Frameworks */,
 				6854C61317FB65B400EF8317 /* Products */,
+				50D5D217181EEA2F0050B0C7 /* OCMockLib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -475,14 +507,19 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OCMockLib",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/OCMockLib/OCMock",
 				);
 				INFOPLIST_FILE = "LogicTests/LogicTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ksennoRetina/Documents/OC_training/PhotoViewer/OCMockLib,
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(PROJECT_DIR)/OCMockLib/libOCMock.a",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -503,14 +540,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogicTests/LogicTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OCMockLib",
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/OCMockLib/OCMock",
 				);
 				INFOPLIST_FILE = "LogicTests/LogicTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ksennoRetina/Documents/OC_training/PhotoViewer/OCMockLib,
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(PROJECT_DIR)/OCMockLib/libOCMock.a",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -536,6 +578,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GHUnitTests/GHUnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ksennoRetina/Documents/OC_training/PhotoViewer/OCMockLib,
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -559,6 +605,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GHUnitTests/GHUnitTests-Prefix.pch";
 				INFOPLIST_FILE = "GHUnitTests/GHUnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ksennoRetina/Documents/OC_training/PhotoViewer/OCMockLib,
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

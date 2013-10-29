@@ -17,4 +17,9 @@
     return first + second;
 }
 
+- (NSString *) returnName
+{
+    return name;
+}
+
 @end
